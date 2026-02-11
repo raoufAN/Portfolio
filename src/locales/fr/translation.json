@@ -1,0 +1,160 @@
+{
+  "headerLink": [
+    "Accueil",
+    "Services",
+    "Galerie",
+    "Blog",
+    "À propos",
+    "Zones que nous servons",
+    "Contact",
+    "Demander un devis"
+  ],
+  "hero": [
+    {
+      "title": "Réparation et Entretien de Terrasse",
+      "desc": "Une méthode de finition unique qui dure plus longtemps que les méthodes conventionnelles. Vous avez une meilleure offre que la nôtre ? Montrez-nous le devis écrit et nous battrons ce prix de 10%."
+    },
+    {
+      "title": "Installation Professionnelle de Terrasse",
+      "desc": "Nous sommes spécialisés dans la construction de terrasses solides, durables et élégantes qui s’adaptent parfaitement à votre maison. Notre équipe garantit une qualité durable avec une finition exceptionnelle."
+    },
+    {
+      "title": "Entretien et Restauration de Terrasse",
+      "desc": "Du nettoyage au traitement complet, nous gardons votre terrasse comme neuve. Protégez votre investissement et prolongez sa durée de vie grâce à nos solutions d’entretien éprouvées."
+    }
+  ],
+  "heroButton": "Demander un devis?",
+  "lang": "Langue",
+  "about": {
+    "title": "Ce que Nous Faisons",
+    "miniTitle": "EliteNest Deck Master - Vos Experts en Terrasse",
+    "desc": "Rien ne vaut une terrasse en bois australien de qualité. Mais même les meilleures terrasses ont besoin d’un peu d’entretien pour conserver leur éclat. Et c’est là que nous intervenons ! Chez EliteNest Deck Masters, nous avons plus de 10 ans d’expérience dans la restauration, la rénovation et l’entretien des terrasses en bois à travers EliteNest, de la péninsule de Mornington à Geelong. Nous avons le savoir-faire, l’expérience et l’équipement nécessaires pour redonner vie à n’importe quelle terrasse et lui offrir la protection indispensable contre les éléments.",
+    "offre": "Nous proposons une gamme complète de services d’entretien et de réparation pour tous types de terrasses en bois. Qu’il s’agisse de remplacer des planches abîmées ou des vis corrodées, ou d’un projet complet de restauration, vous pouvez faire confiance à l’équipe d’EliteNest Deck Masters.",
+    "aboutButton": "Apprenez à mieux nous connaître"
+  },
+  "quoteForm": {
+    "fromTitle": "Obtenir un devis",
+    "inputName": "Nom",
+    "inputSubrub": "Votre banlieue",
+    "inputPhone": "Téléphone",
+    "inputArea": "Votre région",
+    "inputEmail": "Email",
+    "inputFile": "Télécharger un fichier",
+    "inputComment": "Ajoutez vos commentaires",
+    "quoteButton": "Envoyer votre demande"
+  },
+
+  "ourMssion": {
+    "title": "Nous prenons soin, nous préservons, nous restaurons",
+    "desc": "La vie australienne et une belle terrasse en bois sont synonymes l'une de l'autre, car pour nous, il s'agit de faire entrer l'intérieur à l'extérieur. Mais avec le temps et les conditions climatiques extrêmes, les terrasses fanées deviennent une dure réalité à laquelle presque toutes les maisons australiennes sont confrontées. Avec une passion pour la restauration du bois, EliteNest Decks Masters a aidé de nombreux foyers à retrouver la beauté originale de leurs terrasses. Soucieux des détails, nous veillons à ce que vos exigences soient respectées afin que vous obteniez les meilleurs résultats pour votre terrasse. Chez Decks Masters, nous avons des professionnels compétents qui connaissent leur métier et vous offrent des services tout simplement inégalés."
+  },
+  "contact": [
+    {
+      "title": "Restauration",
+      "desc": "Restauration du bois usé et ancien avec les techniques les plus récentes.",
+      "icon": "FaRecycle"
+    },
+    {
+      "title": "Ponçage / Nettoyage",
+      "desc": "Ponçage fin et ponçage grossier complet des terrasses en bois avec un nettoyage en profondeur.",
+      "icon": "FaHouseChimney"
+    },
+    {
+      "title": "Teinture & Huilage",
+      "desc": "Techniques avancées d’huilage, de teinture et de peinture pour donner un aspect plus frais à votre terrasse.",
+      "icon": "FaOilCan"
+    },
+    {
+      "title": "Franchise",
+      "desc": "Faites partie de la famille croissante EliteNest Decks Master et nourrissez votre amour du plein air.",
+      "icon": "FaScrewdriverWrench"
+    }
+  ],
+  "contactTitle": "Nettoyage et entretien de terrasses, réparation et restauration – appelez dès aujourd'hui pour un devis gratuit et sans engagement !",
+  "contactButton": "Appelez-nous maintenant",
+
+  "cleaning": {
+    "title": "Nettoyage de terrasse avec un équipement de haute qualité",
+    "desc": "Pour préparer le sol à l’huilage, nous nettoyons avec une brosse douce unique : la ponceuse Terrassen-Blitz, conçue en Allemagne. Cette machine puissante élimine tous les anciens revêtements, la saleté, le gris et la mousse sans utiliser d’eau, de haute pression ou de produits chimiques. Elle enlève même les couches les plus tenaces dans les coins et bords étroits. Contrairement aux ponceuses à bande classiques avec des bandes abrasives, il n’y a aucune perte du profil du bois. Et surtout, l’aspirateur intégré aspire la poussière, la saleté et les allergènes afin d’éviter tout risque pour la santé."
+  },
+  "commentTitle": "Ce que nos clients disent de nous",
+  "comments": [
+    {
+      "name": "Sarah M.",
+      "comment": "EliteNest a complètement transformé notre terrasse arrière. Le bois semble neuf et la finition est haut de gamme. Je suis ravie !",
+      "time": "2025-08-10",
+      "stars": 5
+    },
+    {
+      "name": "James L.",
+      "comment": "Professionnels, ponctuels et compétents. Ils ont réparé les planches endommagées et restauré ma terrasse au-delà de mes attentes.",
+      "time": "2025-07-28",
+      "stars": 5
+    },
+    {
+      "name": "Olivia R.",
+      "comment": "Notre terrasse était devenue grise et terne, mais le service de restauration d’EliteNest a redonné la couleur riche du bois. Je recommande vivement !",
+      "time": "2025-07-12",
+      "stars": 4
+    },
+    {
+      "name": "Daniel K.",
+      "comment": "L’équipe a expliqué chaque étape et a utilisé des produits de haute qualité. Ma terrasse est magnifique et protégée pour des années.",
+      "time": "2025-06-25",
+      "stars": 5
+    },
+    {
+      "name": "Emily P.",
+      "comment": "Nous avions des taches tenaces, mais le nettoyage d’EliteNest a fait des merveilles. La terrasse est de nouveau accueillante.",
+      "time": "2025-06-14",
+      "stars": 4
+    },
+    {
+      "name": "Mark T.",
+      "comment": "J’ai été impressionné par leur souci du détail. Du ponçage à l’huilage, tout a été fait avec soin et précision.",
+      "time": "2025-05-30",
+      "stars": 5
+    },
+    {
+      "name": "Isabella D.",
+      "comment": "EliteNest a non seulement restauré ma terrasse mais m’a aussi conseillé pour l’entretien. Excellent service client !",
+      "time": "2025-05-18",
+      "stars": 5
+    },
+    {
+      "name": "Lucas H.",
+      "comment": "Après des années de négligence, je pensais ma terrasse irrécupérable. EliteNest m’a prouvé le contraire : elle semble neuve.",
+      "time": "2025-04-22",
+      "stars": 5
+    },
+    {
+      "name": "Chloe W.",
+      "comment": "Super équipe, service fiable et résultats fantastiques. EliteNest est mon choix numéro un pour l’entretien des terrasses.",
+      "time": "2025-04-05",
+      "stars": 4
+    }
+  ],
+  "services": {
+    "title": "Nos Services",
+    "serviceOne": {
+      "title": "Nettoyage de terrasse",
+      "desc": "Un nettoyage régulier de la terrasse est une étape essentielle de son entretien. Le nettoyage ne se limite pas à éliminer les taches et impuretés visibles sur le bois, il contribue également à prévenir les détériorations...",
+      "button": "Lire plus"
+    },
+    "serviceTwo": {
+      "title": "Rénovation de terrasse",
+      "desc": "Votre solution complète pour réparer votre terrasse et lui redonner tout son éclat, ce qui augmentera sans aucun doute la valeur de votre maison et vous protégera contre des problèmes imprévus...",
+      "button": "Lire plus"
+    },
+    "serviceThree": {
+      "title": "Ponçage et teinture de terrasse",
+      "desc": "Les deux étapes les plus importantes de tout projet de restauration de terrasse sont le ponçage et la teinture. Pour le ponçage, l’équipe EliteNest Deck Masters met son expertise à votre service...",
+      "button": "Lire plus"
+    }
+  },
+  "gallery": "Galerie",
+  "footer": {
+    "copyright": "Votre entreprise. Tous droits réservés.",
+    "reachus": "Contactez-nous"
+  }
+}

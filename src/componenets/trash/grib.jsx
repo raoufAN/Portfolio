@@ -6,7 +6,7 @@ const Grib = () => {
       {/* TOP SVG */}
       <svg
         viewBox="0 0 1000 1000"
-        className="fixed -top-1/2 w-full h-full pointer-events-none z-20"
+        className="fixed z-20 w-full h-full pointer-events-none -top-1/2"
         xmlns="http://www.w3.org/2000/svg">
         <defs>
           {/* Outer */}
@@ -76,7 +76,7 @@ const Grib = () => {
       {/* BOTTOM SVG */}
       <svg
         viewBox="0 0 1000 1000"
-        className="fixed -bottom-1/2 w-full h-full pointer-events-none z-20"
+        className="fixed z-20 w-full h-full pointer-events-none -bottom-1/2"
         xmlns="http://www.w3.org/2000/svg">
         <defs>
           {/* Outer */}
@@ -148,3 +148,20 @@ const Grib = () => {
 };
 
 export default Grib;
+
+<h1
+  aria-hidden
+  className="absolute text-5xl font-semibold text-transparent md:text-6xl blur-2xl opacity-40 bg-gradient-to-r from-indigo-400 via-purple-500 to-blue-400 bg-clip-text">
+  Merging physical logic
+  <br />
+  with digital creativity.
+</h1>;
+
+{
+  /* Main Text */
+}
+<h1 className="relative text-5xl font-semibold tracking-tight text-transparent md:text-6xl bg-gradient-to-r from-white via-indigo-200 to-white bg-clip-text">
+  Merging physical logic
+  <br />
+  with digital creativity.
+</h1>;

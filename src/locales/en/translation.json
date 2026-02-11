@@ -1,0 +1,158 @@
+{
+  "headerLink": [
+    "Home",
+    "Services",
+    "Gallery",
+    "Blog",
+    "About",
+    "Areas We Serve",
+    "Contact",
+    "Get A Quote"
+  ],
+  "lang": "Language",
+  "hero": [
+    {
+      "title": "Deck Repaire & Care",
+      "desc": "Unique finishing methode that outlast the conventional ones. Getting a better offer than us? Share with us the written quote and we will beat the quote by 10%"
+    },
+    {
+      "title": "Professional Deck Installation",
+      "desc": "We specialize in building strong, durable, and stylish decks that perfectly match your home. Our expert team ensures long-lasting quality with a finish that stands out."
+    },
+    {
+      "title": "Deck Maintenance & Restoration",
+      "desc": "From cleaning and sealing to complete restoration, we keep your deck looking brand new. Protect your investment and extend its life with our proven maintenance solutions."
+    }
+  ],
+  "heroButton": "Get A Quote",
+  "about": {
+    "title": "What We Do?",
+    "miniTitle": "EliteNest Deck Master - Your Decking Experts",
+    "desc": "Nothing Beats a Quality Australian Timber Deck. But even the best decks need a little love to keep them looking their best. And that's where we come in! At EliteNest Deck Matsers,we have more than 10 years' Experience providing timber deck restoration, deck rejuvenation and deck maintenance and repair services across EliteNest, from Morinington Peninsula to Geelong. We have the expertise,the experience and the equipment to breathe new life into any deck and to provide the protection from the elements that quality timber needs",
+    "offre": "We offer a full range of maintenance and repair services for all types of timber decks.From replacing damaged boards or corroded screws to complete deck restoration project, you can trust the team at EliteNest Deck Matsers",
+    "aboutButton": "Get to know us Better"
+  },
+  "quoteForm": {
+    "fromTitle": "Get A Quote",
+    "inputName": "Name",
+    "inputSubrub": "Your Subrub",
+    "inputPhone": "Phone",
+    "inputArea": "Your Area",
+    "inputEmail": "Email",
+    "inputFile": "Upload File",
+    "inputComment": "Add Your Comments",
+    "quoteButton": "Submit Your Query"
+  },
+  "ourMssion": {
+    "title": "We Care, We Preserve, We Restore",
+    "desc": "Australian life and a beautiful timber deck are synonym for each other as for us,it is all about bringing indoors to outdoors.But with time and exterme weather conditions,withered decks become a harsh reality that almost all Australian homes have a face. With a penchant for restoration timber,EliteNest Decks Masters have helped households restore the original beauty of decks.with an eye to details,we ensure that your requirement are met so that you get the best results for your deck,At Decks Masters, we have professionals who know their job and we provide you services that are simply unparalleled"
+  },
+  "contact": [
+    {
+      "title": "Restorations",
+      "desc": " Restoration of withered and old wood with the latest techniques.",
+      "icon": "FaRecycle"
+    },
+    {
+      "title": "Sanding/Cleaning",
+      "desc": "Fine sanding and full coarse sending of wooden decks along with deep cleaning.",
+      "icon": "FaHouseChimney"
+    },
+    {
+      "title": "taining & Oiling",
+      "desc": "Advanced oiling, staining and painting technique for a fresher deck look.",
+      "icon": "FaOilCan"
+    },
+    {
+      "title": "Franchise",
+      "desc": " Be a part of the growing EliteNest Decks Matser family and nuture your love for outdoor time.",
+      "icon": "FaScrewdriverWrench"
+    }
+  ],
+  "contactTitle": "Dor Deck cleaning & MainTeanance, Repair & Restoration call today for a no obligation, free quate!",
+  "contactButton": "Call us Now",
+  "cleaning": {
+    "title": "Deck Cleaning with high-quality equipment",
+    "desc": "To prepare the floor for oiling we clean using  a unique soft brush Germany Engineered Terrassen-Blitz Sander. This powerful machine removes all previous coating,dirt,grey and moss without using water,hight pressure or chemicals.it removes most stubborn layers even in narrow edges and corners.Unlike conventional belt sanders with adrasive belts,there is no loss of the timber profile.Most importantly,the built-in vaccum cleaner sucks up dust, dirt and allergens so there is no health hazard."
+  },
+  "commentTitle": "What Our Clients Say About Us",
+  "comments": [
+    {
+      "name": "Sarah M.",
+      "comment": "EliteNest completely transformed our backyard deck. The wood looks brand new, and the finish feels premium. Couldn’t be happier!",
+      "time": "2025-08-10",
+      "stars": 5
+    },
+    {
+      "name": "James L.",
+      "comment": "Professional, punctual, and skilled. They repaired damaged boards on my deck and restored it beyond my expectations.",
+      "time": "2025-07-28",
+      "stars": 5
+    },
+    {
+      "name": "Olivia R.",
+      "comment": "Our deck had turned gray and dull, but EliteNest’s restoration service brought back the rich timber color. Highly recommend!",
+      "time": "2025-07-12",
+      "stars": 4
+    },
+    {
+      "name": "Daniel K.",
+      "comment": "The team explained every step of the process and used high-quality products. My deck now looks stunning and feels protected for years.",
+      "time": "2025-06-25",
+      "stars": 5
+    },
+    {
+      "name": "Emily P.",
+      "comment": "We had stubborn stains on our deck, but EliteNest’s cleaning service worked wonders. It looks fresh and welcoming again.",
+      "time": "2025-06-14",
+      "stars": 4
+    },
+    {
+      "name": "Mark T.",
+      "comment": "I was impressed by their attention to detail. From sanding to oiling, everything was done with precision and care.",
+      "time": "2025-05-30",
+      "stars": 5
+    },
+    {
+      "name": "Isabella D.",
+      "comment": "EliteNest not only restored my deck but also gave me great advice on how to maintain it. Excellent customer service!",
+      "time": "2025-05-18",
+      "stars": 5
+    },
+    {
+      "name": "Lucas H.",
+      "comment": "After years of neglect, I thought my deck was beyond saving. EliteNest proved me wrong—it looks like a brand-new installation.",
+      "time": "2025-04-22",
+      "stars": 5
+    },
+    {
+      "name": "Chloe W.",
+      "comment": "Great team, reliable service, and fantastic results. EliteNest is my go-to for deck care and restoration.",
+      "time": "2025-04-05",
+      "stars": 4
+    }
+  ],
+  "services": {
+    "title": "Our Services",
+    "serviceOne": {
+      "title": "Deck Cleaning",
+      "desc": " Reguar deck cleaning is an importatnt part of deck maintenance. Cleaning not only removes unsightly stains and contaminants from the timber surface, but it also helps to prevents...",
+      "button": "Read More"
+    },
+    "serviceTwo": {
+      "title": "Deck Renuvenation",
+      "desc": "Your one-stop-shop for repairing your deck and restoring its true visual appeal,which will undoubtedly increase the value of your home and keep you from unforseen challenges...",
+      "button": "Read More"
+    },
+    "serviceThree": {
+      "title": "Deck Sanding and Staining",
+      "desc": "The two most important elements of any deck restoration project are deck sanding and staining. When it comes to deck sanding, the EliteNest Deck Masters team...",
+      "button": "Read More"
+    }
+  },
+  "gallery": "Gallery",
+  "footer": {
+    "copyright": "Your Company. All rights reserved.",
+    "reachus": "Reach Us"
+  }
+}
