@@ -52,7 +52,7 @@ const HeroContent = () => {
             </h1>
           </div>
 
-          <div className=" md:flex items-center justify-center w-full text-2xl md:text-[4rem] gap-5 mx-auto mt-5 md:gap-10 max-w-7xl min-h-140px md:min-h-180px">
+          <div className="flex items-center justify-center w-full text-2xl md:text-[4rem] gap-5 mx-auto mt-5 md:gap-10 max-w-7xl min-h-140px md:min-h-180px">
             <div className="flex items-center justify-end h-full">
               <AnimatePresence mode="wait">
                 <Motion.h1
