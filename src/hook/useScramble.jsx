@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 
 const useScramble = (text, duration = 1.5, isTriggered = true) => {
   const [display, setDisplay] = useState(text);
-  const chars = "!<>-_\\/[]{}—=+*^?#________";
+  const chars = "!<>-_\\/※▀=□◈/^■—=+*^?#___◈‡__";
 
   const scramble = useCallback(() => {
     let frame = 0;
