@@ -23,12 +23,12 @@ const Header = () => {
         <div className="flex items-center">
           <Motion.span
             animate={{ color: isDark ? "#ffffff" : "#0f172a" }}
-            className="text-lg md:text-3xl font-black tracking--0.1em">
+            className=" md:text-3xl font-black tracking--0.1em">
             RAOUF
           </Motion.span>
           <Motion.span
             animate={{ color: isDark ? "rgba(255,255,255,0.7)" : "rgba(15,23,42,0.5)" }}
-            className="ml-2 text-lg md:text-3xl font-light tracking-[0.2em]">
+            className="ml-2  md:text-3xl font-light tracking-[0.2em]">
             ANNANI
           </Motion.span>
         </div>
@@ -55,7 +55,7 @@ const Header = () => {
                 : "bg-black/5 border-black/5 text-slate-900"
             }`}>
             <FaGlobe
-              className={`w-[22px] h-[22px] transition-transform duration-700 ${langOpen ? "rotate-180" : ""}`}
+              className={`w-4 h-4 md:w-[22px] md:h-[22px] transition-transform duration-700 ${langOpen ? "rotate-180" : ""}`}
             />
           </button>
           <LangMenu langOpen={langOpen} isDark={isDark} setLangOpen={setLangOpen} />
@@ -72,7 +72,7 @@ const Header = () => {
           <Motion.div
             animate={{ rotate: isDark ? 0 : 180 }}
             transition={{ type: "spring", stiffness: 200 }}>
-            {isDark ? <FaMoon className="w-5 h-5" /> : <FaSun className="w-5 h-5" />}
+            {isDark ? <FaMoon className="w-4 h-4 md:w-5 md:h-5" /> : <FaSun className="w-5 h-5" />}
           </Motion.div>
         </Motion.button>
       </Motion.div>
