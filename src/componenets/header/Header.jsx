@@ -4,6 +4,7 @@ import { toggleMode } from "../../redux/modeSlice";
 import { useState } from "react";
 import { motion as Motion } from "framer-motion";
 import LangMenu from "../langMenu/LangMenu";
+import { FaGlobeAmericas } from "react-icons/fa";
 
 const Header = () => {
   const { mode } = useSelector((state) => state.mode);
@@ -13,8 +14,7 @@ const Header = () => {
   const isDark = mode === "dark";
 
   return (
-    <nav className="fixed top-0 left-0 flex items-center justify-between w-full px-6 py-6 pointer-events-none z-100 md:px-12">
-      {/* LOGO (Pure Code) */}
+    <nav className="absolute top-0 left-0 flex items-center justify-between w-full px-6 py-6 pointer-events-none z-100 md:px-12">
       <Motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -39,7 +39,6 @@ const Header = () => {
         </Motion.span>
       </Motion.div>
 
-      {/* UTILITY CONTROLS */}
       <Motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -54,8 +53,8 @@ const Header = () => {
                 ? "bg-white/5 border-white/10 text-white"
                 : "bg-black/5 border-black/5 text-slate-900"
             }`}>
-            <FaGlobe
-              className={`w-4 h-4 md:w-[22px] md:h-[22px] transition-transform duration-700 ${langOpen ? "rotate-180" : ""}`}
+            <FaGlobeAmericas
+              className={`w-4 h-4 md:w-5 md:h-5  transition-transform duration-700 ${langOpen ? "rotate-180" : ""}`}
             />
           </button>
           <LangMenu langOpen={langOpen} isDark={isDark} setLangOpen={setLangOpen} />

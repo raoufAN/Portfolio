@@ -8,7 +8,7 @@ const HeroBackground = ({ isDark }) => {
   return (
     <svg
       viewBox="0 0 1000 1400"
-      className="fixed inset-0 z-30 object-cover w-full h-full pointer-events-none"
+      className="absolute inset-0 z-30 object-cover w-full h-full pointer-events-none"
       xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="topOuter">
@@ -42,7 +42,7 @@ const HeroBackground = ({ isDark }) => {
           cy="500"
           rx="1700"
           ry="820"
-          animate={{ fill: isDark ? "#af89ff" : "#00CCFF" }}
+          animate={{ fill: isDark ? "#af89ff" : "#094d91" }}
           transition={colorTransition}
           filter="url(#topOuter)"
           opacity={isDark ? 0.5 : 0.25}
@@ -76,7 +76,7 @@ const HeroBackground = ({ isDark }) => {
           cy="500"
           rx="1700"
           ry="820"
-          animate={{ fill: isDark ? "#af89ff" : "#00CCFF" }}
+          animate={{ fill: isDark ? "#af89ff" : "#0c5eb0" }}
           transition={colorTransition}
           filter="url(#topOuter)"
           opacity={isDark ? 0.3 : 0.15}
