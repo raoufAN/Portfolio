@@ -35,9 +35,7 @@ const HeroContent = ({ scrollYProgress }) => {
 
   return (
     <div className="relative z-50 flex flex-col items-center justify-center h-full px-6 text-center pointer-events-none">
-      {/* 2. WRAP CONTENT IN MOTION.DIV FOR FADE-OUT */}
       <Motion.div style={{ opacity: opacityFade }} className="max-w-6xl">
-        {/* TOP LABEL */}
         <Motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -48,8 +46,7 @@ const HeroContent = ({ scrollYProgress }) => {
           Raouf Annani <span className="mx-2">—</span> 2026
         </Motion.p>
 
-        <div className="relative mt-4 space-y-8">
-          {/* 3. PARALLAX PORTFOLIO TEXT */}
+        <div className="relative mt-4 ">
           <Motion.div
             style={{ y: portfolioY, scale: portfolioScale }}
             className="relative flex flex-col items-center text-center">
@@ -64,11 +61,10 @@ const HeroContent = ({ scrollYProgress }) => {
             </h1>
           </Motion.div>
 
-          {/* DUAL-TONE HEADING (Centered grid to prevent shake) */}
           <Motion.div
             style={{ opacity: opacityFadeoText }}
-            className="flex items-center justify-center w-full text-3xl md:text-[4rem] tracking-[2px] gap-5 mx-auto mt-5 md:gap-10 max-w-7xl">
-            <div className="flex items-center justify-end flex-1">
+            className="flex items-center justify-center w-full text-3xl md:text-[4rem] tracking-[2px] gap-5 mx-auto  md:gap-10 max-w-7xl h-20 md:h-32 overflow-hidden">
+            <div className="flex items-center ">
               <AnimatePresence mode="wait">
                 <Motion.h1
                   key={roles[index].main}
@@ -86,7 +82,7 @@ const HeroContent = ({ scrollYProgress }) => {
               </AnimatePresence>
             </div>
 
-            <div className="flex items-center justify-start flex-1">
+            <div className="flex items-center">
               <h2
                 className={`font-['Bebas_Neue'] font-bold leading-none  ${
                   isDark ? "text-white" : "text-[#063666]"
@@ -100,10 +96,9 @@ const HeroContent = ({ scrollYProgress }) => {
           </Motion.div>
         </div>
 
-        {/* BOTTOM SUBTITLE */}
         <Motion.div
           style={{ opacity: opacityFadeoText }}
-          className="flex flex-col items-center gap-4 mt-8">
+          className="flex flex-col items-center gap-4 ">
           <p
             className={`max-w-xl text-[10px] md:text-sm tracking-[0.3em] uppercase  ${isDark ? "text-white/40" : "text-[#a8b2bd]"}`}>
             Crafting high-performance interfaces for the modern web.

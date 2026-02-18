@@ -1,14 +1,19 @@
 import { motion as Motion, useTransform } from "framer-motion";
+import { useSelector } from "react-redux";
 
 const About = ({ scrollYProgress }) => {
-  // It starts high (-500) and slides to its center position (0)
-  // It starts invisible and becomes fully visible as it enters
+  const { mode } = useSelector((state) => state.mode);
+  const isDark = mode === "dark";
   const seniorY = useTransform(scrollYProgress, [0, 1], [-1000, 0]);
   const seniorOpacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
   const portfolioScale = useTransform(scrollYProgress, [0, 1], [1.4, 1]);
 
   return (
-    <section className="flex items-center justify-center w-full h-screen overflow-hidden bg-slate-50">
+    <section
+      className={`relative h-screen w-full overflow-hidden transition-colors duration-700 ${
+        isDark ? "bg-[#0a0a1a]" : "bg-[#F0F7FF]"
+      }`}>
+      <div className="absolute inset-0 z-40 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
       <Motion.div
         style={{ y: seniorY, opacity: seniorOpacity, scale: portfolioScale }}
         className="text-center">
