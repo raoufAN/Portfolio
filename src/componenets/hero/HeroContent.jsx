@@ -63,7 +63,7 @@ const HeroContent = ({ scrollYProgress }) => {
 
           <Motion.div
             style={{ opacity: opacityFadeoText }}
-            className="flex items-center justify-center w-full text-3xl md:text-[4rem] tracking-[2px] gap-5 mx-auto  md:gap-10 max-w-7xl h-20 md:h-32 overflow-hidden">
+            className="flex items-center justify-center w-full text-3xl md:text-[4rem] tracking-[2px] gap-5 mx-auto  md:gap-10 max-w-7xl h-20 md:h-32 overflow-hidden line-clamp-1">
             <div className="flex items-center ">
               <AnimatePresence mode="wait">
                 <Motion.h1
