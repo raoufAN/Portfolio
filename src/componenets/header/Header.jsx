@@ -48,7 +48,7 @@ const Header = () => {
         <Motion.div className="relative">
           <button
             onClick={() => setLangOpen(!langOpen)}
-            className={`p-3 rounded-full transition-all duration-500 backdrop-blur-xl border  cursor-pointer ${
+            className={`p-2.5 md:p-3 rounded-full transition-all duration-500 backdrop-blur-xl border  cursor-pointer ${
               isDark
                 ? "bg-white/5 border-white/10 text-white"
                 : "bg-black/5 border-black/5 text-slate-900"
@@ -63,7 +63,7 @@ const Header = () => {
         {/* Theme Toggle */}
         <Motion.button
           onClick={() => dispatch(toggleMode())}
-          className={`p-3 rounded-full transition-all duration-500 backdrop-blur-xl border cursor-pointer ${
+          className={`p-2.5 md:p-3 rounded-full transition-all duration-500 backdrop-blur-xl border cursor-pointer ${
             isDark
               ? "bg-white/5 border-white/10 text-white"
               : "bg-black/5 border-black/5 text-amber-500"
@@ -71,7 +71,11 @@ const Header = () => {
           <Motion.div
             animate={{ rotate: isDark ? 0 : 180 }}
             transition={{ type: "spring", stiffness: 200 }}>
-            {isDark ? <FaMoon className="w-4 h-4 md:w-5 md:h-5" /> : <FaSun className="w-5 h-5" />}
+            {isDark ? (
+              <FaMoon className="w-4 h-4 md:w-5 md:h-5" />
+            ) : (
+              <FaSun className="w-4 h-4 md:w-5 md:h-5" />
+            )}
           </Motion.div>
         </Motion.button>
       </Motion.div>

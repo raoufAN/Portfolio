@@ -1,24 +1,24 @@
-import { motion as Motion, AnimatePresence, useTransform } from "framer-motion";
+import { motion as Motion, AnimatePresence, useTransform, useScroll } from "framer-motion";
 import { useSelector } from "react-redux";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useScramble from "../../hook/useScramble";
 
-const HeroContent = ({ scrollYProgress }) => {
+const HeroContent = () => {
+  const containerRef = useRef(null);
   const { mode } = useSelector((state) => state.mode);
   const isDark = mode === "dark";
 
-  // Fades out everything as you scroll down
-  const opacityFade = useTransform(scrollYProgress, [0, 0.5], [1, 1]);
-  const opacityFadeoText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"],
+  });
 
-  // Moves the "Portfolio" background text slower than the rest (Parallax)
-  const portfolioY = useTransform(scrollYProgress, [0, 1], [0, 1200]);
-  // Zooms the "Portfolio" text slightly
-  const portfolioScale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
+  const opacityFadeoText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+  const heroY = useTransform(scrollYProgress, [0, 1], ["0vh", `65vh`]);
+  const portfolioScale = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
 
   const roles = [
     { main: "Electrical", tech: "Engineering" },
-    { main: "Creative", tech: "Technologist" },
     { main: "Frontend", tech: "Developer" },
     { main: "Interface", tech: "Designer" },
   ];
@@ -34,9 +34,12 @@ const HeroContent = ({ scrollYProgress }) => {
   }, [roles.length]);
 
   return (
-    <div className="relative z-50 flex flex-col items-center justify-center h-full px-6 text-center pointer-events-none">
-      <Motion.div style={{ opacity: opacityFade }} className="max-w-6xl">
+    <div
+      ref={containerRef}
+      className="relative z-50 flex flex-col items-center justify-center h-full px-6 text-center pointer-events-none">
+      <Motion.div className="max-w-6xl">
         <Motion.p
+          style={{ opacity: opacityFadeoText }}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 1 }}
@@ -48,7 +51,7 @@ const HeroContent = ({ scrollYProgress }) => {
 
         <div className="relative mt-4 ">
           <Motion.div
-            style={{ y: portfolioY, scale: portfolioScale }}
+            style={{ y: heroY, scale: portfolioScale }}
             className="relative flex flex-col items-center text-center">
             <h1
               aria-hidden
@@ -87,7 +90,6 @@ const HeroContent = ({ scrollYProgress }) => {
                 className={`font-['Bebas_Neue'] font-bold leading-none  ${
                   isDark ? "text-white" : "text-[#063666]"
                 }`}>
-                {/* Fixed width to prevent vibration */}
                 <span className="inline-block min-w-150px md:min-w-400px drop-shadow-[0_0_30px_rgba(0,127,255,0.3)] text-left">
                   {scrambledRole}
                 </span>
