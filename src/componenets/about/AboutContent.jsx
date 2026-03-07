@@ -4,12 +4,12 @@ import AboutGridimage from "./AboutGridimage";
 
 const AboutContent = ({ isDark }) => {
   return (
-    <div className="mt-[5vh] relative z-50 flex flex-col text-center overflow-hidden">
+    <div className="mt-[10vh] relative z-50 flex flex-col text-center overflow-hidden">
       {/* Header Section */}
       <Motion.h2
         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
         initial={{ opacity: 0, x: -200 }}
-        className={`font-['Bebas_Neue'] text-2xl md:text-6xl leading-[0.85] tracking-tight uppercase ${
+        className={`font-['Bebas_Neue'] text-2xl md:text-6xl leading-[0.85] tracking-tight uppercase  p-0 m-0 ${
           isDark ? "text-white" : "text-slate-900"
         }`}>
         Hello Again, I'm{" "}
@@ -27,7 +27,7 @@ const AboutContent = ({ isDark }) => {
         <AboutGridimage />
 
         <div
-          className={`space-y-6 font-mono  md:w-1/2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+          className={`space-y-6 font-mono  lg:w-1/2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
           <p className="text-sm leading-relaxed md:text-lg">
             I’m **Raouf Annani**, a 29-year-old **Electrical Engineer** and **Front-end Developer**
             from the historic city of Constantine, Algeria. My background in engineering provides me

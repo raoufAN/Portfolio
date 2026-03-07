@@ -14,8 +14,8 @@ const HeroContent = () => {
   });
 
   const opacityFadeoText = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-  const heroY = useTransform(scrollYProgress, [0, 1], ["0vh", `65vh`]);
-  const portfolioScale = useTransform(scrollYProgress, [0, 1], [1, 0.2]);
+  const heroY = useTransform(scrollYProgress, [0, 1], ["0vh", `62vh`]);
+  const portfolioScale = useTransform(scrollYProgress, [0, 1], [1, 0.3]);
 
   const roles = [
     { main: "Electrical", tech: "Engineering" },

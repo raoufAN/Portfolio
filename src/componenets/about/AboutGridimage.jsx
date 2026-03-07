@@ -1,9 +1,12 @@
-import myPic from "../../assets/mypic.jpeg";
+import P_ONE from "../../assets/raouf1.jpeg";
+import P_TWO from "../../assets/raouf2.jpeg";
+import P_THREE from "../../assets/raouf3.jpeg";
+
 import { motion as Motion } from "framer-motion";
 
 const AboutGridimage = () => {
   return (
-    <div className="relative hidden h-[500px] w-full items-center justify-center md:flex md:w-1/2">
+    <div className="relative hidden h-[500px] w-full items-center justify-center lg:flex md:w-1/2">
       {/* --- PROFESSIONAL TECHNICAL GRID --- */}
       <div className="absolute inset-0 flex items-center justify-center">
         {/* 1. The Rotating Rings Group */}
@@ -47,25 +50,23 @@ const AboutGridimage = () => {
           whileInView={{ rotate: -8, opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="absolute left-10 top-1/4 rounded-2xl border-[6px] border-white bg-white shadow-2xl">
+          className="absolute left-10 top-1/2 rounded-2xl border-[6px] border-white bg-white shadow-2xl">
           <img
-            src={myPic}
-            className="object-cover w-32 h-40 transition-all duration-500 rounded-lg grayscale hover:grayscale-0"
+            src={P_ONE}
+            className="object-cover w-40 h-48 transition-all duration-500 rounded-lg"
             alt="Profile"
           />
         </Motion.div>
 
-        {/* Photo 2: Center-Top */}
         <Motion.div
           initial={{ rotate: 0, opacity: 0, y: -50 }}
           whileInView={{ rotate: 4, opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
           className="absolute top-5 left-1/2 -translate-x-1/2 rounded-2xl border-[6px] border-white bg-white shadow-2xl">
-          <img src={myPic} className="object-cover rounded-lg h-44 w-36" alt="Profile" />
+          <img src={P_TWO} className="object-cover rounded-lg h-44 w-36" alt="Profile" />
         </Motion.div>
 
-        {/* Photo 3: Right-Bottom */}
         <Motion.div
           initial={{ rotate: 0, opacity: 0, x: 50 }}
           whileInView={{ rotate: -3, opacity: 1, x: 0 }}
@@ -73,8 +74,8 @@ const AboutGridimage = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="absolute bottom-10 right-10 rounded-2xl border-[6px] border-white bg-white shadow-2xl">
           <img
-            src={myPic}
-            className="object-cover w-40 h-48 transition-all duration-500 rounded-lg grayscale hover:grayscale-0"
+            src={P_THREE}
+            className="object-cover w-40 h-48 transition-all duration-500 rounded-lg "
             alt="Profile"
           />
         </Motion.div>
