@@ -48,7 +48,7 @@ const Curtains = () => {
           key="loader-wrapper"
           exit={{ opacity: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="fixed inset-0 overflow-hidden pointer-events-none z-9999">
+          className="fixed inset-0 h-screen overflow-hidden pointer-events-none z-9999">
           {/* Logo Layer */}
           <Motion.div
             variants={logoVariants}
@@ -66,7 +66,7 @@ const Curtains = () => {
                 margin: 0,
                 fontFamily: "'Monoton','Orbitron', 'Rajdhani', sans-serif",
                 lineHeight: 1,
-                WebkitTextStroke: "2px #FFFFFF", // Creates the outline effect
+                WebkitTextStroke: "2px #FFFFFF",
                 textStroke: "2px #FFFFFF",
                 paintOrder: "stroke fill",
               }}>
