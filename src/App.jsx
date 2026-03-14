@@ -4,7 +4,7 @@ import Hero from "./componenets/hero/Hero";
 
 function App() {
   return (
-    <div className="relative font-['Roboto'] w-full snap-y snap-mandatory scroll-smooth">
+    <div className="relative font-['Roboto'] w-full snap-y snap-mandatory scroll-smooth overflow-hidden">
       <Curtains />
 
       <section className="relative w-full h-screen ">

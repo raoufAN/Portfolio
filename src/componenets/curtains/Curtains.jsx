@@ -52,7 +52,7 @@ const Curtains = () => {
             variants={logoVariants}
             initial="initial"
             animate="animate"
-            className="absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center z-100">
+            className="absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center z-9999">
             <h1
               className="w-full flex flex-col items-center justify-center font-black uppercase tracking-[0.05em] text-black"
               style={{
