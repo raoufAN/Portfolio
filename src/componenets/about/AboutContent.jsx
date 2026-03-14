@@ -5,7 +5,6 @@ import AboutGridimage from "./AboutGridimage";
 const AboutContent = ({ isDark }) => {
   return (
     <div className="mt-[10vh] relative z-50 flex flex-col text-center overflow-hidden">
-      {/* Header Section */}
       <Motion.h2
         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
         initial={{ opacity: 0, x: -200 }}
@@ -23,11 +22,10 @@ const AboutContent = ({ isDark }) => {
         </span>
       </Motion.h2>
       <div className="container relative flex flex-row items-center justify-center w-full gap-12 px-10 py-5 mx-auto md:py-20 ">
-        {/* Left Side: Visuals with Grid */}
         <AboutGridimage />
 
         <div
-          className={`space-y-6 font-mono  lg:w-1/2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
+          className={`space-y-1 md:space-y-6 font-mono  lg:w-1/2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
           <p className="text-sm leading-relaxed md:text-lg">
             I’m **Raouf Annani**, a 29-year-old **Electrical Engineer** and **Front-end Developer**
             from the historic city of Constantine, Algeria. My background in engineering provides me

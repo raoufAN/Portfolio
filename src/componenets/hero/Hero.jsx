@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section
-      className={`relative h-screen w-full   transition-colors duration-700  snap-start ${
+      className={`relative h-screen w-full transition-colors duration-700  snap-start ${
         isDark ? "bg-[#0a0a1a]" : "bg-[#F0F7FF]"
       }`}>
       <Header />

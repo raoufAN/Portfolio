@@ -10,6 +10,7 @@ const logoVariants = {
   animate: {
     opacity: [0, 1, 1, 0],
     scale: [0.9, 1, 1, 1.05],
+
     transition: {
       times: [0, 0.2, 0.8, 1],
       duration: 2.5,
@@ -24,7 +25,6 @@ const panelVariants = {
     y: "-100%",
     transition: {
       duration: 1.4,
-      // Senior Ease: Soft acceleration with a long, smooth tail
       ease: [0.65, 0, 0.35, 1],
       delay: 2.3 + i * 0.08,
     },
@@ -33,10 +33,9 @@ const panelVariants = {
 
 const Curtains = () => {
   const dispatch = useDispatch();
-  const loading = useSelector((s) => s.loader.loading);
+  const loading = useSelector((state) => state.loader.loading);
 
   useEffect(() => {
-    // Total sequence time
     const timer = setTimeout(() => dispatch(finishLoading()), 4200);
     return () => clearTimeout(timer);
   }, [dispatch]);
@@ -48,39 +47,33 @@ const Curtains = () => {
           key="loader-wrapper"
           exit={{ opacity: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="fixed inset-0 h-screen overflow-hidden pointer-events-none z-9999">
-          {/* Logo Layer */}
+          className="fixed inset-0 flex items-center justify-center w-full h-screen overflow-hidden bg-transparent pointer-events-none z-9999">
           <Motion.div
             variants={logoVariants}
             initial="initial"
             animate="animate"
-            className="absolute inset-0 flex items-center justify-center z-100">
+            className="absolute inset-0 flex flex-col items-center justify-center w-full h-full px-6 text-center z-100">
             <h1
+              className="w-full flex flex-col items-center justify-center font-black uppercase tracking-[0.05em] text-black"
               style={{
-                fontSize: "clamp(2.5rem, 10vw, 6rem)",
-                fontWeight: 900,
-                textTransform: "uppercase",
-                color: "black",
-                letterSpacing: "0.08em",
-                textAlign: "center",
-                margin: 0,
+                fontSize: "clamp(2.2rem, 8vw, 5.5rem)",
                 fontFamily: "'Monoton','Orbitron', 'Rajdhani', sans-serif",
-                lineHeight: 1,
-                WebkitTextStroke: "2px #FFFFFF",
-                textStroke: "2px #FFFFFF",
+                lineHeight: "0.9",
+                WebkitTextStroke: "1px #FFFFFF",
                 paintOrder: "stroke fill",
               }}>
-              RAOUF ANNANI
+              <div className="w-full space-y-2 md:space-y-0 md:flex md:items-center md:justify-center">
+                <span className="block md:inline">RAOUF</span>
+                <span className="block md:inline md:ml-4">ANNANI</span>
+              </div>
+
               <span
+                className="block font-light text-[#CCCCCC] tracking-[0.4em] uppercase"
                 style={{
-                  display: "block",
-                  fontSize: "clamp(0.9rem, 3vw, 1.8rem)",
-                  fontWeight: 300,
-                  letterSpacing: "0.5em",
-                  marginTop: "clamp(0.8rem, 2vw, 1.5rem)",
-                  color: "#CCCCCC",
+                  fontSize: "clamp(0.7rem, 2vw, 1.2rem)",
+                  marginTop: "1.5rem",
                   WebkitTextStroke: "0px",
-                  textStroke: "0px",
+                  paddingLeft: "0.4em",
                 }}>
                 portfolio
               </span>
@@ -96,7 +89,7 @@ const Curtains = () => {
                 variants={panelVariants}
                 initial="initial"
                 animate="animate"
-                className="flex-1 h-full bg-black border-r border-black/5"
+                className="flex-1 h-full bg-black border-r border-white/5"
                 style={{ willChange: "transform" }}
               />
             ))}
@@ -108,11 +101,3 @@ const Curtains = () => {
 };
 
 export default Curtains;
-
-/*
-<h1 className="text-6xl font-black tracking-tighter text-transparent uppercase md:text-8xl bg-linear-to-r from-[#7054e9] to-[#af89ff] bg-clip-text">
-  Portfolio
-</h1>;
-
-bg-[#F5F5F7]
-*/
