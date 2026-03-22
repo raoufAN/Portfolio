@@ -1,10 +1,14 @@
+import { useSelector } from "react-redux";
 import About from "./componenets/about/About";
 import Curtains from "./componenets/curtains/Curtains";
 import Hero from "./componenets/hero/Hero";
+import Experience from "./componenets/Experience/Experience";
 
 function App() {
+  const loading = useSelector((state) => state.loader.loading);
   return (
-    <div className="relative font-['Roboto'] w-full snap-y snap-mandatory scroll-smooth overflow-hidden">
+    <div
+      className={`relative font-['Roboto'] w-full snap-y snap-mandatory scroll-smooth  ${loading ? "overflow-hidden" : ""}`}>
       <Curtains />
 
       <section className="relative w-full h-screen ">
@@ -12,6 +16,7 @@ function App() {
       </section>
 
       <About />
+      <Experience />
 
       <section className="h-screen services"></section>
     </div>

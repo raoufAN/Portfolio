@@ -21,7 +21,7 @@ const AboutContent = ({ isDark }) => {
           Raouf Annani
         </span>
       </Motion.h2>
-      <div className="container relative flex flex-row items-center justify-center w-full gap-12 px-10 py-5 mx-auto md:py-20 ">
+      <div className="container relative flex flex-row items-center justify-center w-full gap-12 px-5 py-5 mx-auto md:py-20 ">
         <AboutGridimage />
 
         <div
@@ -44,7 +44,7 @@ const AboutContent = ({ isDark }) => {
             challenge—one coffee at a time 😇
           </p>
 
-          <CvButton />
+          <CvButton isdark={isDark} />
         </div>
       </div>
     </div>

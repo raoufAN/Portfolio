@@ -56,7 +56,7 @@ const Curtains = () => {
             <h1
               className="w-full flex flex-col items-center justify-center font-black uppercase tracking-[0.05em] text-black"
               style={{
-                fontSize: "clamp(2.2rem, 8vw, 5.5rem)",
+                fontSize: "clamp(2.5rem, 8vw, 5.5rem)",
                 fontFamily: "'Monoton','Orbitron', 'Rajdhani', sans-serif",
                 lineHeight: "0.9",
                 WebkitTextStroke: "1px #FFFFFF",
@@ -70,7 +70,7 @@ const Curtains = () => {
               <span
                 className="block font-light text-[#CCCCCC] tracking-[0.4em] uppercase"
                 style={{
-                  fontSize: "clamp(0.7rem, 2vw, 1.2rem)",
+                  fontSize: "clamp(1rem, 2vw, 1.2rem)",
                   marginTop: "1.5rem",
                   WebkitTextStroke: "0px",
                   paddingLeft: "0.4em",

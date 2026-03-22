@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion as Motion } from "framer-motion";
 
 const HeroBackground = ({ isDark }) => {
-  const colorTransition = { duration: 0.8, ease: "easeInOut" };
+  const colorTransition = { duration: 0.5, ease: "easeInOut" };
   const [blurOn, setBlurOn] = useState(false);
 
   return (
@@ -14,19 +14,19 @@ const HeroBackground = ({ isDark }) => {
         <filter id="topOuter">
           <Motion.feGaussianBlur
             animate={{ stdDeviation: blurOn ? 90 : 5 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.5 }}
           />
         </filter>
         <filter id="middleOuter">
           <Motion.feGaussianBlur
             animate={{ stdDeviation: blurOn ? 50 : 15 }}
-            transition={{ duration: 1.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
           />
         </filter>
         <filter id="inner">
           <Motion.feGaussianBlur
             animate={{ stdDeviation: blurOn ? 30 : 40 }}
-            transition={{ duration: 1.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           />
         </filter>
       </defs>
