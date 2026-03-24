@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import AboutBackground from "./AboutBackground";
+import Background from "./Background";
 import AboutContent from "./AboutContent";
 
 const About = () => {
@@ -13,7 +13,7 @@ const About = () => {
       }`}>
       <div className="absolute inset-0 z-10 opacity-[0.04] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
-      <AboutBackground isDark={isDark} />
+      <Background isDark={isDark} />
       <AboutContent isDark={isDark} />
     </section>
   );

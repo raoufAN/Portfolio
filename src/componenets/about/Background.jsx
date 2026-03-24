@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion as Motion } from "framer-motion";
 
-const AboutBackground = ({ isDark }) => {
+const Background = ({ isDark }) => {
   const colorTransition = { duration: 1, ease: [0.4, 0, 0.2, 1] };
   const [blurOn, setBlurOn] = useState(false);
   return (
@@ -71,4 +71,4 @@ const AboutBackground = ({ isDark }) => {
   );
 };
 
-export default AboutBackground;
+export default Background;
