@@ -3,6 +3,7 @@ import About from "./componenets/about/About";
 import Curtains from "./componenets/curtains/Curtains";
 import Hero from "./componenets/hero/Hero";
 import Experience from "./componenets/Experience/Experience";
+import Skills from "./componenets/Skills/Skills";
 
 function App() {
   const loading = useSelector((state) => state.loader.loading);
@@ -17,6 +18,7 @@ function App() {
 
       <About />
       <Experience />
+      <Skills />
 
       <section className="h-screen services"></section>
     </div>
