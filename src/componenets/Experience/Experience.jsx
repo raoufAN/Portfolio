@@ -65,7 +65,7 @@ const Experience = () => {
           className="mb-20 text-center">
           <h2
             className={`text-2xl sm:text-3xl italic font-black tracking-tighter uppercase  lg:text-5xl transition-colors duration-700 
-            ${isDark ? "text-white" : "text-[#1a1a2e]"}`}>
+           text-white`}>
             Expériences{" "}
             <span className={`${isDark ? "text-[#5945a1]" : "text-[#063666]"} text-glow`}>
               profissional
