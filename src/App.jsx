@@ -9,7 +9,7 @@ function App() {
   const loading = useSelector((state) => state.loader.loading);
   return (
     <div
-      className={`relative font-['Roboto'] w-full snap-y snap-mandatory scroll-smooth  ${loading ? "overflow-hidden" : ""}`}>
+      className={`relative font-['Roboto'] w-full md:snap-y md:snap-mandatory md:scroll-smooth  ${loading ? "overflow-hidden" : ""}`}>
       <Curtains />
 
       <section className="relative w-full h-screen ">

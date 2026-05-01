@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <section
-      className={`relative min-h-screen w-full overflow-hidden transition-colors duration-700  ${
+      className={`relative  min-h-screen w-full overflow-hidden transition-colors duration-700 md:snap-start   ${
         isDark ? "bg-[#05050a]" : "bg-[#F0F7FF]"
       }`}>
       <div className="absolute inset-0 z-10 opacity-[0.04] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
