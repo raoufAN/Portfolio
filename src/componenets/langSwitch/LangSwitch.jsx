@@ -24,12 +24,12 @@ const LangSwitch = ({ setShowList }) => {
         onClick={() => changeLang("fr")}>
         FRANCAIS
       </button>
-      <button
+      {/**<button
         dir="rtl"
         className="cursor-pointer px-6 py-2.5 border-b border-gray-300 hover:bg-gray-100"
         onClick={() => changeLang("ar")}>
         العربية
-      </button>
+      </button> */}
     </div>
   );
 };

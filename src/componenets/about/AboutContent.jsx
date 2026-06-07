@@ -1,48 +1,65 @@
 import { motion as Motion } from "framer-motion";
 import CvButton from "../CvButton/CvButton";
 import AboutGridimage from "./AboutGridimage";
+import { useTranslation } from "react-i18next";
 
 const AboutContent = ({ isDark }) => {
+  const { t } = useTranslation();
   return (
-    <div className="mt-[10vh] relative z-50 flex flex-col text-center overflow-hidden">
-      <Motion.h2
-        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8 } }}
-        initial={{ opacity: 0, x: -200 }}
-        className={`font-['Bebas_Neue'] text-2xl md:text-6xl leading-[0.85] tracking-tight uppercase  p-0 m-0 ${
-          isDark ? "text-white" : "text-slate-900"
-        }`}>
-        Hello Again, I'm{" "}
-        <span
-          className={`transition-colors duration-500 ${
-            isDark
-              ? "text-transparent bg-clip-text bg-linear-to-r from-white via-white/40 to-white/20"
-              : "text-transparent bg-clip-text bg-linear-to-r from-white via-white/40 to-white/20"
-          }`}>
-          Raouf Annani
-        </span>
-      </Motion.h2>
-      <div className="container relative flex flex-row items-center justify-center w-full gap-12 px-5 py-5 mx-auto md:py-20 ">
+    <div className="relative z-50 flex flex-col overflow-hidden text-center">
+      <div className="container relative z-50 flex flex-col items-center justify-center w-full min-h-screen gap-12 px-5 py-10 mx-auto md:flex-row md:py-20">
         <AboutGridimage />
 
         <div
-          className={`space-y-1 md:space-y-6 font-mono  lg:w-1/2 ${isDark ? "text-slate-300" : "text-slate-700"}`}>
-          <p className="text-sm leading-relaxed md:text-lg">
-            I’m **Raouf Annani**, a 29-year-old **Electrical Engineer** and **Front-end Developer**
-            from the historic city of Constantine, Algeria. My background in engineering provides me
-            with a unique, analytical approach to building digital interfaces—the perfect
-            intersection where **precision meets creativity**.
-          </p>
+          className={`relative flex flex-col justify-center space-y-3 md:space-y-7 lg:w-1/2 text-left ${
+            isDark ? "text-slate-300" : "text-slate-700"
+          }`}>
+          {/* small badge */}
+          <div className="flex items-center gap-3 md:flex">
+            <div className={`h-px w-10 ${isDark ? "bg-white/30" : "bg-slate-400"}`} />
 
-          <p className="text-sm leading-relaxed md:text-lg">
-            Beyond the code, I am an **Amadeus Agent**, an experience that has sharpened my focus on
-            efficiency and user experience. I thrive on the logic of complex systems, whether I'm
-            designing electrical circuits or crafting seamless web applications.
-          </p>
+            <span
+              className={`text-[10px] md:text-xs uppercase tracking-[0.35em] ${
+                isDark ? "text-white/40" : "text-slate-500"
+              }`}>
+              {t("aboutContent.sign")}
+            </span>
+          </div>
 
-          <p className="text-sm leading-relaxed md:text-lg">
-            I have an insatiable hunger for learning and problem-solving. Always ready for the next
-            challenge—one coffee at a time 😇
-          </p>
+          {/* title */}
+          <Motion.div
+            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, x: -80 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex flex-row justify-start space-x-2 md:justify-start space-y-2md:space-x-0">
+            <h2
+              className={`text-2xl sm:text-3xl md:text-4xl  leading-[0.9] tracking-tight font-bold uppercase`}>
+              <span
+                className={`text-transparent bg-clip-text bg-linear-to-r ${
+                  isDark
+                    ? "from-white via-white/30 to-white/10"
+                    : "from-[#063666] via-[#3b82f6] to-[#93c5fd]"
+                }`}>
+                {t("aboutContent.title")}
+              </span>
+            </h2>
+          </Motion.div>
+
+          {/* description */}
+          <div className="space-y-3 md:space-y-5">
+            <p className="text-sm leading-7 md:text-base md:leading-8 lg:text-lg">
+              {t("aboutContent.description.text1")}
+            </p>
+
+            <p className="text-sm leading-7 md:text-base md:leading-8 lg:text-lg">
+              {t("aboutContent.description.text2")}
+            </p>
+
+            <p className="text-sm leading-7 md:text-base md:leading-8 lg:text-lg">
+              {t("aboutContent.description.text3")}
+            </p>
+          </div>
 
           <CvButton isdark={isDark} />
         </div>

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 const languages = [
   { code: "en", name: "English", flag: "fi fi-gb" },
   { code: "fr", name: "Français", flag: "fi fi-fr" },
-  { code: "ar", name: "العربية", flag: "fi fi-dz" },
+  //{ code: "ar", name: "العربية", flag: "fi fi-dz" },
 ];
 
 const LangMenu = ({ langOpen, setLangOpen, isDark }) => {

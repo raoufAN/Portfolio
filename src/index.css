@@ -7,13 +7,11 @@
     0 0 60px rgba(99, 102, 241, 0.25);
 }
 
-@media (min-width: 768px) {
-  html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
 
-  section {
-    scroll-snap-align: center;
-  }
+.snipping-scroller {
+  scroll-snap-align: start;
 }

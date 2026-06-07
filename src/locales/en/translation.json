@@ -1,158 +1,142 @@
 {
-  "headerLink": [
-    "Home",
-    "Services",
-    "Gallery",
-    "Blog",
-    "About",
-    "Areas We Serve",
-    "Contact",
-    "Get A Quote"
-  ],
-  "lang": "Language",
-  "hero": [
-    {
-      "title": "Deck Repaire & Care",
-      "desc": "Unique finishing methode that outlast the conventional ones. Getting a better offer than us? Share with us the written quote and we will beat the quote by 10%"
-    },
-    {
-      "title": "Professional Deck Installation",
-      "desc": "We specialize in building strong, durable, and stylish decks that perfectly match your home. Our expert team ensures long-lasting quality with a finish that stands out."
-    },
-    {
-      "title": "Deck Maintenance & Restoration",
-      "desc": "From cleaning and sealing to complete restoration, we keep your deck looking brand new. Protect your investment and extend its life with our proven maintenance solutions."
-    }
-  ],
-  "heroButton": "Get A Quote",
-  "about": {
-    "title": "What We Do?",
-    "miniTitle": "EliteNest Deck Master - Your Decking Experts",
-    "desc": "Nothing Beats a Quality Australian Timber Deck. But even the best decks need a little love to keep them looking their best. And that's where we come in! At EliteNest Deck Matsers,we have more than 10 years' Experience providing timber deck restoration, deck rejuvenation and deck maintenance and repair services across EliteNest, from Morinington Peninsula to Geelong. We have the expertise,the experience and the equipment to breathe new life into any deck and to provide the protection from the elements that quality timber needs",
-    "offre": "We offer a full range of maintenance and repair services for all types of timber decks.From replacing damaged boards or corroded screws to complete deck restoration project, you can trust the team at EliteNest Deck Matsers",
-    "aboutButton": "Get to know us Better"
+  "HeroContent": {
+    "heroRoles": [
+      { "main": "Electrical", "tech": "Engineering" },
+      { "main": "Frontend", "tech": "Developer" },
+      { "main": "Interface", "tech": "Designer" }
+    ],
+    "HeroDescription": "Crafting high-performance interfaces for the modern web"
   },
-  "quoteForm": {
-    "fromTitle": "Get A Quote",
-    "inputName": "Name",
-    "inputSubrub": "Your Subrub",
-    "inputPhone": "Phone",
-    "inputArea": "Your Area",
-    "inputEmail": "Email",
-    "inputFile": "Upload File",
-    "inputComment": "Add Your Comments",
-    "quoteButton": "Submit Your Query"
+
+  "aboutContent": {
+    "sign": "About Me",
+    "title": "Hello Again",
+    "description": {
+      "text1": " I’m a Front-end Developer and Electrical Engineer from Constantine, Algeria, passionate about building immersive digital experiences where creativity meets precision.",
+      "text2": " My engineering background shaped the way I approach interfaces — with structure, performance, and attention to detail. I enjoy transforming complex ideas into smooth, elegant user experiences",
+      "text3": " Beyond development, working as an Amadeus Agent strengthened my problem-solving mindset and taught me the importance of efficiency, adaptability, and human-centered systems."
+    },
+    "CvButton": "Download My CV"
   },
-  "ourMssion": {
-    "title": "We Care, We Preserve, We Restore",
-    "desc": "Australian life and a beautiful timber deck are synonym for each other as for us,it is all about bringing indoors to outdoors.But with time and exterme weather conditions,withered decks become a harsh reality that almost all Australian homes have a face. With a penchant for restoration timber,EliteNest Decks Masters have helped households restore the original beauty of decks.with an eye to details,we ensure that your requirement are met so that you get the best results for your deck,At Decks Masters, we have professionals who know their job and we provide you services that are simply unparalleled"
+
+  "experienceContent": {
+    "header": {
+      "simpleHeader": "Professional",
+      "ColorfuleHeader": "Experiences"
+    },
+    "experiences": [
+      {
+        "year": "2022",
+        "title": "Sales Representative",
+        "company": "EURL HOME AND BEYOND",
+        "desc": "Business development, negotiation, and relationship management for high-end clientele in the design industry.",
+        "tag": "Sales"
+      },
+      {
+        "year": "2024",
+        "title": "Logistics Coordinator",
+        "company": "EURL MELYNA HADID",
+        "desc": "Logistics coordination, fleet management, and delivery schedule optimization for maximum operational efficiency.",
+        "tag": "Logistics"
+      },
+      {
+        "year": "2025",
+        "title": "Data Entry & Billing",
+        "company": "M Santé",
+        "desc": "Managing financial workflows, critical data entry, and optimizing client invoicing processes with high precision.",
+        "tag": "Admin"
+      },
+      {
+        "year": "2025",
+        "title": "Electrical Engineer",
+        "company": "BOUTRFA Enterprise",
+        "desc": "Design and supervision of industrial and residential electrical installations. Expertise in technical schematics and safety standards.",
+        "tag": "Engineering"
+      },
+      {
+        "year": "2026",
+        "title": "Amadeus GDS & Ticketing Agent",
+        "company": "NUMIDIA Agency",
+        "desc": "Expertise in Amadeus GDS systems. Managing complex international ticketing and optimizing travel itineraries.",
+        "tag": "Aviation Tech"
+      }
+    ]
   },
-  "contact": [
-    {
-      "title": "Restorations",
-      "desc": " Restoration of withered and old wood with the latest techniques.",
-      "icon": "FaRecycle"
+  "skillsContent": {
+    "header": {
+      "simpleHeader": "My",
+      "ColorfuleHeader": "Skills"
     },
-    {
-      "title": "Sanding/Cleaning",
-      "desc": "Fine sanding and full coarse sending of wooden decks along with deep cleaning.",
-      "icon": "FaHouseChimney"
-    },
-    {
-      "title": "taining & Oiling",
-      "desc": "Advanced oiling, staining and painting technique for a fresher deck look.",
-      "icon": "FaOilCan"
-    },
-    {
-      "title": "Franchise",
-      "desc": " Be a part of the growing EliteNest Decks Matser family and nuture your love for outdoor time.",
-      "icon": "FaScrewdriverWrench"
-    }
-  ],
-  "contactTitle": "Dor Deck cleaning & MainTeanance, Repair & Restoration call today for a no obligation, free quate!",
-  "contactButton": "Call us Now",
-  "cleaning": {
-    "title": "Deck Cleaning with high-quality equipment",
-    "desc": "To prepare the floor for oiling we clean using  a unique soft brush Germany Engineered Terrassen-Blitz Sander. This powerful machine removes all previous coating,dirt,grey and moss without using water,hight pressure or chemicals.it removes most stubborn layers even in narrow edges and corners.Unlike conventional belt sanders with adrasive belts,there is no loss of the timber profile.Most importantly,the built-in vaccum cleaner sucks up dust, dirt and allergens so there is no health hazard."
-  },
-  "commentTitle": "What Our Clients Say About Us",
-  "comments": [
-    {
-      "name": "Sarah M.",
-      "comment": "EliteNest completely transformed our backyard deck. The wood looks brand new, and the finish feels premium. Couldn’t be happier!",
-      "time": "2025-08-10",
-      "stars": 5
-    },
-    {
-      "name": "James L.",
-      "comment": "Professional, punctual, and skilled. They repaired damaged boards on my deck and restored it beyond my expectations.",
-      "time": "2025-07-28",
-      "stars": 5
-    },
-    {
-      "name": "Olivia R.",
-      "comment": "Our deck had turned gray and dull, but EliteNest’s restoration service brought back the rich timber color. Highly recommend!",
-      "time": "2025-07-12",
-      "stars": 4
-    },
-    {
-      "name": "Daniel K.",
-      "comment": "The team explained every step of the process and used high-quality products. My deck now looks stunning and feels protected for years.",
-      "time": "2025-06-25",
-      "stars": 5
-    },
-    {
-      "name": "Emily P.",
-      "comment": "We had stubborn stains on our deck, but EliteNest’s cleaning service worked wonders. It looks fresh and welcoming again.",
-      "time": "2025-06-14",
-      "stars": 4
-    },
-    {
-      "name": "Mark T.",
-      "comment": "I was impressed by their attention to detail. From sanding to oiling, everything was done with precision and care.",
-      "time": "2025-05-30",
-      "stars": 5
-    },
-    {
-      "name": "Isabella D.",
-      "comment": "EliteNest not only restored my deck but also gave me great advice on how to maintain it. Excellent customer service!",
-      "time": "2025-05-18",
-      "stars": 5
-    },
-    {
-      "name": "Lucas H.",
-      "comment": "After years of neglect, I thought my deck was beyond saving. EliteNest proved me wrong—it looks like a brand-new installation.",
-      "time": "2025-04-22",
-      "stars": 5
-    },
-    {
-      "name": "Chloe W.",
-      "comment": "Great team, reliable service, and fantastic results. EliteNest is my go-to for deck care and restoration.",
-      "time": "2025-04-05",
-      "stars": 4
-    }
-  ],
-  "services": {
-    "title": "Our Services",
-    "serviceOne": {
-      "title": "Deck Cleaning",
-      "desc": " Reguar deck cleaning is an importatnt part of deck maintenance. Cleaning not only removes unsightly stains and contaminants from the timber surface, but it also helps to prevents...",
-      "button": "Read More"
-    },
-    "serviceTwo": {
-      "title": "Deck Renuvenation",
-      "desc": "Your one-stop-shop for repairing your deck and restoring its true visual appeal,which will undoubtedly increase the value of your home and keep you from unforseen challenges...",
-      "button": "Read More"
-    },
-    "serviceThree": {
-      "title": "Deck Sanding and Staining",
-      "desc": "The two most important elements of any deck restoration project are deck sanding and staining. When it comes to deck sanding, the EliteNest Deck Masters team...",
-      "button": "Read More"
-    }
-  },
-  "gallery": "Gallery",
-  "footer": {
-    "copyright": "Your Company. All rights reserved.",
-    "reachus": "Reach Us"
+    "skills": [
+      {
+        "Excel": "Advanced data analysis and reporting using formulas, pivot tables, charts, and automated workflows to transform raw data into actionable insights."
+      },
+      {
+        "Word": "Professional document creation with strong expertise in formatting, templates, structured layouts, and technical documentation."
+      },
+      {
+        "PowerPoint": "Designing engaging presentations with clear storytelling, effective visuals, and professional slide organization."
+      },
+      {
+        "Matlab": "Developing simulations, mathematical models, and engineering solutions using MATLAB for analysis and problem-solving."
+      },
+      {
+        "PSIM": "Simulating power electronics and electrical systems to analyze performance, optimize designs, and validate concepts."
+      },
+      {
+        "HTML": "Building semantic, accessible, and SEO-friendly web structures that serve as the foundation of modern websites."
+      },
+      {
+        "CSS": "Creating responsive and visually appealing user interfaces using modern layouts, animations, and design principles."
+      },
+      {
+        "SCSS": "Writing scalable and maintainable stylesheets with variables, nesting, reusable components, and organized architecture."
+      },
+      {
+        "JS": "Developing dynamic web applications with modern JavaScript, API integration, DOM manipulation, and asynchronous programming."
+      },
+      {
+        "React": "Building scalable component-based applications using React, hooks, state management, and modern development practices."
+      },
+      {
+        "Responsive": "Designing adaptive user experiences that deliver consistent performance across mobile, tablet, and desktop devices."
+      },
+      {
+        "Tailwind": "Creating modern and efficient user interfaces with Tailwind CSS, focusing on rapid development and design consistency."
+      },
+      {
+        "TypeScript": "Enhancing application reliability through static typing, strong interfaces, and maintainable code architecture."
+      },
+      {
+        "Framer Motion": "Creating smooth animations and interactive experiences that improve usability, engagement, and visual appeal."
+      },
+      {
+        "Redux": "Managing complex application state through predictable data flow and scalable state management patterns."
+      },
+      {
+        "Jest": "Ensuring application quality through unit and integration testing, improving reliability and long-term maintainability."
+      },
+      {
+        "SQL": "Designing and querying relational databases using efficient data retrieval, filtering, aggregation, and optimization techniques."
+      },
+      {
+        "MySQL": "Managing structured data with optimized schemas, performant queries, and reliable database architecture."
+      },
+      {
+        "Firebase": "Building full-stack applications with authentication, real-time databases, hosting, and cloud-based services."
+      },
+      {
+        "GitHub": "Managing source code, collaboration, version control, and project workflows using modern Git practices."
+      },
+      {
+        "Amadeus": "Operating airline reservation, ticketing, and travel management systems with practical industry experience."
+      },
+      {
+        "Translate": "Facilitating clear communication across multiple languages through accurate translation and content adaptation."
+      },
+      {
+        "react router": "Implementing client-side routing, navigation, protected routes, and dynamic page management in React applications."
+      }
+    ]
   }
 }

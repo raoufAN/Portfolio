@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
-import Background from "./Background";
+import Background from "../background/Background";
 import AboutContent from "./AboutContent";
+import { motion as Motion } from "framer-motion";
 
 const About = () => {
   const { mode } = useSelector((state) => state.mode);
@@ -8,12 +9,12 @@ const About = () => {
 
   return (
     <section
-      className={`relative  min-h-screen w-full overflow-hidden transition-colors duration-700 md:snap-start   ${
+      className={`relative  min-h-screen w-full overflow-hidden transition-colors duration-700 snap-start snipping-scroller   ${
         isDark ? "bg-[#05050a]" : "bg-[#F0F7FF]"
       }`}>
       <div className="absolute inset-0 z-10 opacity-[0.04] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
-
       <Background isDark={isDark} />
+
       <AboutContent isDark={isDark} />
     </section>
   );

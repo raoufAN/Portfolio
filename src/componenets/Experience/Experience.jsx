@@ -1,74 +1,35 @@
 import { AnimatePresence, motion as Motion } from "framer-motion";
-import Background from "../about/Background";
+import Background from "../background/Background";
 import { useSelector } from "react-redux";
 import BoxExperience from "./BoxExperience";
-
-const experiences = [
-  {
-    year: "2022",
-    title: "Chargé de vente",
-    company: "EURL HOME AND BEYOND",
-    desc: "Développement commercial, négociation et fidélisation d'une clientèle exigeante dans le secteur du design.",
-    tag: "Sales",
-  },
-  {
-    year: "2024",
-    title: "Chargé du suivi du transport",
-    company: "EURL MELYNA HADID",
-    desc: "Coordination logistique, gestion des flottes et optimisation des délais de livraison pour une efficacité maximale.",
-    tag: "Logistics",
-  },
-
-  {
-    year: "2025",
-    title: "Saisie et Facturation",
-    company: "M Santé",
-    desc: "Gestion rigoureuse des flux financiers, saisie de données critiques et optimisation de la facturation client.",
-    tag: "Admin",
-  },
-
-  {
-    year: "2025",
-    title: "Ingénieur en électricité",
-    company: "Entreprise BOUTRFA – Travaux d’électricité",
-    desc: "Conception et suivi des installations électriques industrielles et domestiques. Expertise en schémas électriques et normes de sécurité.",
-    tag: "Engineering",
-  },
-
-  {
-    year: "2026",
-    title: "Amadeus Agent & Billetterie",
-    company: "Agence NUMIDIA",
-    desc: "Expertise en systèmes de réservation GDS Amadeus. Gestion complexe de la billetterie internationale et optimisation des itinéraires de voyage.",
-    tag: "Aviation Tech",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const { mode } = useSelector((state) => state.mode);
   const isDark = mode === "dark";
+  const { t } = useTranslation();
+  const experiences = t("experienceContent.experiences", { returnObjects: true });
   return (
     <section
       className={`relative min-h-screen  w-full py-20 snap-start overflow-hidden font-['Roboto'] transition-colors duration-700 ${
         isDark ? "bg-[#05050a]" : "bg-[#F0F7FF]"
       }`}>
-      {/* Texture de bruit subtile */}
       <div className="absolute inset-0 z-10 opacity-[0.04] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
 
       <Background isDark={isDark} />
 
       <div className="relative z-50 max-w-6xl px-6 mx-auto">
         <Motion.div
-          initial={{ opacity: 0, y: 200 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 2 }}
-          className="mb-20 text-center">
+          className="mb-20 text-center"
+          initial={{ opacity: 0, y: 200, scale: 0.95, filter: "blur(20px)" }}
+          whileInView={{ opacity: 1, y: 0, scale: 1, filter: "blur(0px)" }}
+          transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}>
           <h2
             className={`text-2xl sm:text-3xl italic font-black tracking-tighter uppercase  lg:text-5xl transition-colors duration-700 
            text-white`}>
-            Expériences{" "}
+            {t("experienceContent.header.simpleHeader")}{" "}
             <span className={`${isDark ? "text-[#5945a1]" : "text-[#063666]"} text-glow`}>
-              profissional
+              {t("experienceContent.header.ColorfuleHeader")}
             </span>
           </h2>
           <div
@@ -104,7 +65,7 @@ const Experience = () => {
                     />
                   </div>
                   <AnimatePresence>
-                    <BoxExperience exp={exp} isDark={isDark} />
+                    <BoxExperience exp={exp} isDark={isDark} isEven={isEven} key={i} />
                   </AnimatePresence>
                 </div>
               );

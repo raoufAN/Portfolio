@@ -8,19 +8,15 @@ import Skills from "./componenets/Skills/Skills";
 function App() {
   const loading = useSelector((state) => state.loader.loading);
   return (
-    <div
-      className={`relative font-['Roboto'] w-full md:snap-y md:snap-mandatory md:scroll-smooth  ${loading ? "overflow-hidden" : ""}`}>
+    <div className={`relative font-['Roboto'] w-full   ${loading ? "overflow-hidden" : ""}`}>
       <Curtains />
-
-      <section className="relative w-full h-screen ">
-        <Hero />
-      </section>
+      <Hero />
 
       <About />
       <Experience />
       <Skills />
 
-      <section className="h-screen services"></section>
+      <section className="h-[200vh] services snap-start"></section>
     </div>
   );
 }
